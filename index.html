@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container"> 
+        <header>
+            <nav>
+                <a href="one.html"><img src="image/logobt.png" alt="image"></a>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">About Us</a></li>
+                </ul>
+            </nav>
+            <!-- <a href="one.html"><img src="image/logobt.png" alt="image"></a> -->
+            <h2>Home</h2>
+        </header>
+        <section id="main">
+            <div class="login-form bordered">
+                <p>This is the <em>HOME PAGE</em> of <strong>Saurabh Shukla</strong></p>
+                <form action='/api/login' method="POST" id="loginForm">
+                    <table>
+                        <tr>
+                            <td><label for="username">Username: </label></td>
+                            <td><input type="text" id="username" name="username" placeholder="Enter your username"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="password">Password: </label></td>
+                            <td><input type="password" name="password" id="password" placeholder="Enter your password"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="hoho">Remember </label></td>
+                            <td><input type="checkbox" id="hoho" name="hoho"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="submit" value="Login"></td>
+                            <td><input type="reset" value="Cancel"></td>
+                        </tr>
+                    </table>
+                </form>
+                <div id="errorMsg"></div>
+                <div id="logoutSection">
+                    
+                    <p>You are logged in</p>
+                    <button id="logoutButton">LogOut</button>
+                </div>
+            </div>
+            <div id="result" class="bordered">
+                <button id="toggleButton">Hide</button>
+                <p id="resultList">Here, we will display the courses</p>
+            </div>
+        </section>
+        <footer>
+            All Right Reserverd | &copy; Saurabh Shukla.
+        </footer>
+    </div>
+    <script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="learn.js"></script>
+</body>
+</html>
